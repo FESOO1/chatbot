@@ -39,7 +39,7 @@ nav {
 .logo > h3 {
     color: white;
     font-family: var(--f-inter);
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /* LINKS */
@@ -72,9 +72,9 @@ nav {
     color: white;
     font-size: 1rem;
     font-family: var(--f-inter);
-    background-color: rgb(23, 24, 28);
+    background-color: rgb(25, 25, 30);
     padding: 10px 28px;
-    border-radius: 13px;
+    border-radius: 0.5rem;
     border-top: 1px solid rgba(255,255,255,0.07);
     border-bottom: 1px solid rgba(255,255,255,0.03);
     cursor: pointer;
@@ -82,7 +82,7 @@ nav {
 }
 
 .call-to-action-button-navbar:hover {
-    background-color: rgb(20, 20, 25);
+    background-color: rgb(30, 30, 35);
 }
 
 /* MAIN CONTENT */
@@ -94,8 +94,7 @@ nav {
 /* MAIN HEADER */
 
 .main-header {
-    padding-top: 150px;
-    min-height: 100vh;
+    padding-top: 160px;
     background-color: #0d0e11;
     display: flex;
     justify-content: center;
@@ -108,7 +107,7 @@ nav {
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
-    padding-bottom: 480px;
+    padding-bottom: 500px;
     background: url(../images/main-header-image.avif) no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -123,8 +122,6 @@ nav {
     padding: 5px 10px;
     font-size: 0.8rem;
     border-radius: 0.5rem;
-    border-top: 1px solid rgba(255,255,255,0.06);
-    border-bottom: 1px solid rgba(255,255,255,0.02);
 }
 
 .main-header-title {
@@ -145,16 +142,15 @@ nav {
 }
 
 .main-header-email-address {
-    width: 480px;
+    width: 450px;
     height: 55px;
     display: grid;
     align-items: center;
     grid-template-columns: 1fr auto;
-    background-color: rgba(46, 46, 46, 0.3);
+    background-color: rgba(40, 40, 40, 0.2);
     border-radius: 0.8rem;
     padding-right: 5px;
-    /* border: 1px solid rgba(195, 233, 45, 0); */
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     overflow: hidden;
     transition: border 300ms;
 }
@@ -166,7 +162,7 @@ nav {
 .email-address-input {
     height: 100%;
     border: 0;
-    padding-left: 15px;
+    padding-left: 18px;
     font-family: var(--f-inter);
     font-size: 1rem;
     background-color: transparent;
@@ -185,4 +181,9 @@ nav {
     cursor: pointer;
     border-top: 1px solid rgba(255,255,255,0.1);
     border-bottom: 1px solid rgba(255,255,255,0.03);
+    transition: background-color 300ms;
+}
+
+.get-notified-button:hover {
+    background-color: rgb(205, 248, 36);
 }
