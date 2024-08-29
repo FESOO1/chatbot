@@ -26,7 +26,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding-inline: 25px;
-    background-color: #0d0e11;
+    background-color: #0d0e119f;
+    backdrop-filter: blur(10px);
 }
 
 .logo {
@@ -93,6 +94,7 @@ nav {
 /* MAIN HEADER */
 
 .main-header {
+    padding-top: 150px;
     min-height: 100vh;
     background-color: #0d0e11;
     display: flex;
@@ -101,23 +103,28 @@ nav {
 }
 
 .main-header-inner {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
+    padding-bottom: 480px;
+    background: url(../images/main-header-image.avif) no-repeat;
+    background-size: contain;
+    background-position: bottom;
 }
 
 .small-title-main-header {
     width: max-content;
-    background-color: #25252888;
+    background-color: #2b2b2d5e;
     color: white;
     font-family: var(--f-poppins);
     font-weight: 200;
-    padding: 5px 8px;
+    padding: 5px 10px;
     font-size: 0.8rem;
-    border-radius: 0.3rem;
-    border-top: 1px solid rgba(255,255,255,0.07);
-    border-bottom: 1px solid rgba(255,255,255,0.03);
+    border-radius: 0.5rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.02);
 }
 
 .main-header-title {
@@ -145,12 +152,21 @@ nav {
     grid-template-columns: 1fr auto;
     background-color: rgba(46, 46, 46, 0.3);
     border-radius: 0.8rem;
-    padding-right: 8px;
+    padding-right: 5px;
+    /* border: 1px solid rgba(195, 233, 45, 0); */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    transition: border 300ms;
+}
+
+.main-header-email-address:focus-within {
+    border: 1px solid rgba(195, 233, 45, 0.653);
 }
 
 .email-address-input {
+    height: 100%;
     border: 0;
-    padding-left: 20px;
+    padding-left: 15px;
     font-family: var(--f-inter);
     font-size: 1rem;
     background-color: transparent;
@@ -159,12 +175,14 @@ nav {
 }
 
 .get-notified-button {
-    height: 40px;
+    height: 42px;
     padding-inline: 15px;
     font-size: 1rem;
     border-radius: 0.5rem;
     border: 0;
-    background-color: rgb(207, 242, 69);
+    background-color: rgb(196, 233, 45);
     font-family: var(--f-inter);
     cursor: pointer;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.03);
 }
