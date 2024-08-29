@@ -12,18 +12,21 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     background-color: rgb(11,11,11);
-}
+} */
 
 /* NAVBAR */
 
 nav {
+    width: 100%;
+    height: 70px;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-inline: 25px;
-    padding-block: 15px;
+    background-color: #0d0e11;
 }
 
 .logo {
@@ -68,12 +71,100 @@ nav {
     color: white;
     font-size: 1rem;
     font-family: var(--f-inter);
-    /* background-color: rgb(20,20,20); */
-    background: radial-gradient(circle at 100% 100%,rgb(20,20,20),rgb(15,15,15));
-    padding: 11px 25px;
-    border-radius: 1rem;
-    /* border: 1px solid rgba(255,255,255,0.05); */
-    border-top: 1px solid rgba(255,255,255,0.1);
+    background-color: rgb(23, 24, 28);
+    padding: 10px 28px;
+    border-radius: 13px;
+    border-top: 1px solid rgba(255,255,255,0.07);
     border-bottom: 1px solid rgba(255,255,255,0.03);
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.call-to-action-button-navbar:hover {
+    background-color: rgb(20, 20, 25);
+}
+
+/* MAIN CONTENT */
+
+/* main {
+
+} */
+
+/* MAIN HEADER */
+
+.main-header {
+    min-height: 100vh;
+    background-color: #0d0e11;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main-header-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.small-title-main-header {
+    width: max-content;
+    background-color: #25252888;
+    color: white;
+    font-family: var(--f-poppins);
+    font-weight: 200;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.main-header-title {
+    font-family: var(--f-inter);
+    color: white;
+    font-size: 4.2rem;
+    font-weight: 400;
+}
+
+.main-header-paragraph {
+    color: white;
+    font-family: var(--f-inter);
+    font-size: 1.2rem;
+    font-weight: 200;
+    width: 600px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.main-header-email-address {
+    width: 480px;
+    height: 55px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto;
+    background-color: rgba(46, 46, 46, 0.3);
+    border-radius: 0.8rem;
+    padding-right: 8px;
+}
+
+.email-address-input {
+    border: 0;
+    padding-left: 20px;
+    font-family: var(--f-inter);
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+.get-notified-button {
+    height: 40px;
+    padding-inline: 15px;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 0;
+    background-color: rgb(207, 242, 69);
+    font-family: var(--f-inter);
     cursor: pointer;
 }
