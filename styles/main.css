@@ -496,7 +496,7 @@ nav {
     flex-direction: column;
     row-gap: 35px;
     font-family: var(--f-inter);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.03);
 }
 
 .pricing-itself-type > h4 {
@@ -521,7 +521,7 @@ nav {
 }
 
 .pricing-itself-price > h2 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 800;
 }
 
@@ -536,7 +536,7 @@ nav {
     row-gap: 10px;
 }
 
-.pricing-itself-includes > h3 {
+.pricing-itself-includes > h4 {
     font-weight: 500;
 }
 
@@ -544,6 +544,8 @@ nav {
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+/* CHOOSE PLAN BUTTON */
 
 .choose-plan-button {
     width: 140px;
