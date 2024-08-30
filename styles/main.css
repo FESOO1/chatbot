@@ -482,6 +482,7 @@ nav {
 .pricing-themselves {
     margin-top: 20px;
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
 }
@@ -512,12 +513,13 @@ nav {
 .pricing-itself-price-includes {
     display: flex;
     flex-direction: column;
-    row-gap: 18px;
+    row-gap: 20px;
 }
 
 .pricing-itself-price {
     display: flex;
     flex-direction: column;
+    row-gap: 8px;
 }
 
 .pricing-itself-price > h2 {
@@ -588,4 +590,42 @@ nav {
 .choose-plan-button:hover .choose-plan-button-svg {
     transform: translateX(0);
     opacity: 1;
+}
+
+/* THE MIDDLE */
+
+.pricing-premium {
+    background-color: #0d0e11;
+}
+
+.pricing-premium > .pricing-itself-type {
+    width: max-content;
+    background-color: #cff1532e;
+    font-weight: 400;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+}
+
+.pricing-premium > .pricing-itself-type > svg {
+    width: 18px;
+    height: 18px;
+}
+
+.pricing-premium > .pricing-itself-type > h4 {
+    padding: 0;
+    background-color: transparent;
+    color: rgb(177, 222, 0);
+}
+
+.pricing-premium > .pricing-itself-price-includes > .pricing-itself-price > h2,
+.pricing-premium > .pricing-itself-price-includes .pricing-itself-includes > h4  {
+    color: white;
+}
+
+.pricing-premium > .pricing-itself-price-includes .pricing-itself-includes > hr {
+    border-top: 1px solid rgba(255,255,255,0.1);
 }
