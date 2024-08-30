@@ -633,8 +633,9 @@ nav {
 /* FAQ */
 
 .faq-container {
-    padding-block: 50px;
+    padding-block: 50px 120px;
     background-color: #f6f7fa;
+    border-radius: 0 0 2rem 2rem;
 }
 
 .faq-container-text {
@@ -717,4 +718,10 @@ nav {
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     transition: 300ms;
+}
+
+/* FOOTER */
+
+footer {
+    height: 600px;
 }
