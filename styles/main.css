@@ -494,7 +494,7 @@ nav {
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
-    row-gap: 35px;
+    row-gap: 40px;
     font-family: var(--f-inter);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.03);
 }
@@ -521,7 +521,7 @@ nav {
 }
 
 .pricing-itself-price > h2 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 800;
 }
 
