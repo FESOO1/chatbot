@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #0d0e11;
 }
@@ -392,4 +396,194 @@ nav {
     line-height: 25px;
     text-align: center;
     width: 550px;
+}
+
+/* TESTIMONIALS */
+
+/* .testimonials {
+    padding-block: 100px 50px;
+    background-color: #f6f7fa;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials-inner {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+
+.small-title-testimonials {
+    width: max-content;
+    background-color: #2b2b2d1e;
+    color: black;
+    font-family: var(--f-poppins);
+    font-weight: 300;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.testimonials-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    font-family: var(--f-inter);
+}
+
+.testimonials-left > h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.testimonials-left > p {
+    font-weight: 300;
+    width: 90%;
+} */
+
+/* PRICING */
+
+.pricing {
+    padding-block: 120px 50px;
+    background-color: #f6f7fa;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-inner {
+    width: 75%;
+}
+
+.pricing-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+}
+
+.small-title-pricing {
+    width: max-content;
+    background-color: #2b2b2d1e;
+    color: black;
+    font-family: var(--f-poppins);
+    font-weight: 300;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.pricing-text > h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: var(--f-inter);
+}
+
+.pricing-themselves {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+/* PRICING ITSELF */
+
+.pricing-itself {
+    padding: 30px;
+    background-color: white;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    font-family: var(--f-inter);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-itself-type > h4 {
+    width: max-content;
+    background-color: #2b2b2d13;
+    color: black;
+    font-weight: 400;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.pricing-itself-price-includes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+
+.pricing-itself-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-itself-price > h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.pricing-itself-price > span {
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.pricing-itself-includes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.pricing-itself-includes > h3 {
+    font-weight: 500;
+}
+
+.pricing-itself-includes-divider {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.choose-plan-button {
+    width: 140px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6px;
+    border-radius: 0.8rem;
+    border: 0;
+    cursor: pointer;
+    font-family: var(--f-inter);
+    font-size: 1rem;
+    background: linear-gradient(134deg, rgb(206, 239, 76) 0%, rgb(231, 255, 143) 100%);
+}
+
+.choose-plan-button-text {
+    font-weight: 500;
+    transform: translateX(9px);
+    transition: transform 300ms;
+}
+
+.choose-plan-button-svg {
+    width: 11px;
+    height: 11px;
+    opacity: 0;
+    transform: translateX(15px);
+    transition: transform 300ms, opacity 300ms;
+}
+
+.choose-plan-button:hover {
+    border: 1px solid rgb(177, 222, 0);
+    background: linear-gradient(134deg, rgb(231, 255, 143) 0%, rgb(231, 255, 143) 100%);
+}
+
+.choose-plan-button:hover .choose-plan-button-text {
+    transform: translateX(0);
+}
+
+.choose-plan-button:hover .choose-plan-button-svg {
+    transform: translateX(0);
+    opacity: 1;
 }
