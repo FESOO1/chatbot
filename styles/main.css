@@ -32,6 +32,7 @@ nav {
     padding-inline: 25px;
     background-color: #0d0e119f;
     backdrop-filter: blur(10px);
+    z-index: 999;
 }
 
 .logo {
@@ -400,7 +401,7 @@ nav {
 
 /* TESTIMONIALS */
 
-/* .testimonials {
+.testimonials {
     padding-block: 100px 50px;
     background-color: #f6f7fa;
     display: flex;
@@ -410,6 +411,7 @@ nav {
 .testimonials-inner {
     width: 75%;
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
 }
@@ -440,7 +442,92 @@ nav {
 .testimonials-left > p {
     font-weight: 300;
     width: 90%;
-} */
+}
+
+.testimonials-right {
+    mask: linear-gradient(transparent, red 20%, red 80%, transparent);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-block: 40px;
+}
+
+.testimonial-right-inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    list-style: none;
+    font-family: var(--f-inter);
+    animation: linear 12s infinite testimonial-right-animation;
+}
+
+@keyframes testimonial-right-animation {
+    from{transform: translateY(0);}
+    to{transform: translateY(100%);}
+}
+
+.testimonial-right-inner-second {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    list-style: none;
+    font-family: var(--f-inter);
+    animation: linear 12s infinite testimonial-right-animation-second;
+    position: absolute;
+    /* top: -40px; */
+    top: 0;
+    transform: translateY(-100%);
+}
+
+@keyframes testimonial-right-animation-second {
+    from{transform: translateY(-100%);}
+    to{transform: translateY(0);}
+    /* to{transform: translateY(40px);} */
+}
+
+.client-tesimonial {
+    background-color: white;
+    padding: 30px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.client-feedback {
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.client-info {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.client-image {
+    line-height: 0;
+}
+
+.client-image > img {
+    width: 45px;
+    height: 45px;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.client-full-name-and-role {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+}
+
+.client-full-name-and-role > span {
+    font-size: 0.85rem;
+}
 
 /* PRICING */
 
