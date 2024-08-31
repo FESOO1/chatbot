@@ -814,5 +814,61 @@ nav {
 /* FOOTER */
 
 footer {
-    height: 600px;
+    padding-block: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-inner {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    height: max-content;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+.footer-logo > svg {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-logo > h3 {
+    height: max-content;
+    color: white;
+    font-family: var(--f-inter);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.footer-links {
+    display: flex;
+    column-gap: 80px;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    font-family: var(--f-inter);
+}
+
+.link-container > h3 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.link-container > a {
+    text-decoration: none;
+    color: gray;
+    transition: color 300ms;
+}
+
+.link-container > a:hover {
+    color: white;
 }
